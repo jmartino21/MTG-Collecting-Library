@@ -4,7 +4,7 @@ import pandas as pd
 # Load the dataset
 @st.cache_data
 def load_data():
-    df = pd.read_csv("Combined_Card_Collection.csv")
+    df = pd.read_csv("MTG collection organized(test).csv")
     df.columns = df.columns.str.lower().str.strip()  # Standardize column names
     return df
 
